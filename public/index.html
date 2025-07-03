@@ -96,7 +96,7 @@
         const modalElement = document.getElementById('apartmentModal');
         apartmentModal = new bootstrap.Modal(modalElement);
         try {
-            const response = await fetch('http://localhost:3000/api/apartments');
+            const response = await fetch('/api/apartments');
             allApartments = await response.json();
             renderMap();
         } catch (error) {
